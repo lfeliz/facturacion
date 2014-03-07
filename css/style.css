@@ -1,0 +1,57 @@
+body{
+	font-family: helvetica;
+
+}
+#contenedor{
+
+	margin: 0 auto;
+	width: 80%;
+	height: 500px;
+	border: 1px solid blue;
+}
+
+header{
+	height: 150px;
+	width: 100%;
+	border: 1px solid blue;
+}
+nav{
+
+	margin: 0 auto ;
+	padding: 0px;
+	margin-top: 108px;
+	width: 500px;
+	height: 40px;
+	border: 1px solid blue;
+}
+nav ul{
+	margin: 0;
+	padding: 0;
+}
+nav ul li{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+nav ul li a{
+	display: block;
+	float: left;
+	width: 122px;
+	height: 40px;
+	background: #00ffff;
+	border: 1px solid red;
+}
+
+#lado{
+	float: left;
+	width: 20%;
+	height: 347px;
+	border: 1px solid blue;
+}
+
+#central{
+	float: left;
+	width: 79.5%;
+	height: 347px;
+	border: 1px solid blue;
+}
