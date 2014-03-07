@@ -2,6 +2,9 @@ body{
 	font-family: helvetica;
 
 }
+a{
+	text-decoration: none;
+}
 #contenedor{
 
 	margin: 0 auto;
@@ -15,11 +18,21 @@ header{
 	width: 100%;
 	border: 1px solid blue;
 }
+
+#hola{
+	width: 200px;
+	height: 100px;
+
+}
+#hola h3{
+	padding: 0;
+	margin: 0;
+}
 nav{
 
 	margin: 0 auto ;
 	padding: 0px;
-	margin-top: 108px;
+	margin-top: 0px;
 	width: 500px;
 	height: 40px;
 	border: 1px solid blue;
@@ -33,13 +46,24 @@ nav ul li{
 	padding: 0;
 	margin: 0;
 }
+
 nav ul li a{
+	display: block;
+	float: left;
+	width: 125px;
+	height: 40px;
+	background: #0000ff;
+	color: white;
+	}
+
+nav ul li a:hover{
 	display: block;
 	float: left;
 	width: 122px;
 	height: 40px;
-	background: #00ffff;
+	background: white;
 	border: 1px solid red;
+	color: black;
 }
 
 #lado{

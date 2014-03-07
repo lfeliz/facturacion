@@ -1,0 +1,21 @@
+body{
+	margin: 0;
+	padding: 0;
+	background: #ADE8E6;
+	font-family: helvetica;
+	
+}
+
+#contenedor{
+	margin: 0 auto;
+	width: 450px;
+	height: 450px;
+	margin-top: 300px;
+}
+
+#formulario{
+
+	width: 350px;
+	height: 80px;
+	background: #1e90ff;
+}
