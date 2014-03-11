@@ -12,8 +12,8 @@
  	 	<header>
  	<div id="hola">
  	<?php
- 	$user = $_POST["user"];
- 	echo "<h3>Hola, ". $user."</h3>";
+ 	/*$user = $_POST["user"];
+ 	echo "<h3>Hola, ". $user."</h3>";*/
  	 ?><br>
  	 <a href="index.php">Salir</a>
  	 </div>
@@ -21,7 +21,7 @@
  		<ul>
  			<li><a href="#">Inicio</a></li>
  			<li><a href="#">Entradas</a></li>
- 			<li><a href="#">Vistas</a></li>
+ 			<li><a href="inicio.php?link=1">Vistas</a></li>
  			<li><a href="#">Reportes</a></li>
  		</ul>
 
@@ -34,34 +34,25 @@
  	</section>
  	<section id="central">
  		
-<?php 
-$link= mysqli_connect("localhost","adminv","inv123","inventario") or die ("Error".mysqli_error($link));
-$query="SELECT * from equipos LIMIT 0 , 30";
-$result= $link->query($query);
-/*while($row = mysqli_fetch_array($result)) {
-  echo $row["posicion"] . "<br>";
-  echo $row["departamento"] . "<br>";
-}*/
-
-?>
-<table class="table table-striped">
-<tr>
-<td>Nombre</td>
-<td>Ip</td>
-<td>Tipo</td>
-</tr>
-<tr>
-
 <?php
-while($row = mysqli_fetch_array($result))
-{
-echo "<td>".$row["Nombre"]."</td>";
-echo "<td>".$row["IP"]."</td>";
-echo "<td>".$row["Tipo"]."</td></tr>";
 
+if (isset($_GET["link"])) {
+	$lin=$_GET["link"];
 }
+
+
+switch ($lin) {
+ 	case 1:
+ 		include "vista1.php";
+ 		break;
+ 	
+ 	default:
+ 		# code...
+ 		break;
+ } 
+
 ?>
-</tr></table>
+
  	</section>
  	
  	<footer>
