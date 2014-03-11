@@ -35,7 +35,6 @@ nav{
 	margin-top: 0px;
 	width: 500px;
 	height: 40px;
-	border: 1px solid blue;
 }
 nav ul{
 	margin: 0;
@@ -50,7 +49,7 @@ nav ul li{
 nav ul li a{
 	display: block;
 	float: left;
-	width: 125px;
+	width: 122px;
 	height: 40px;
 	background: #0000ff;
 	color: white;
@@ -78,4 +77,5 @@ nav ul li a:hover{
 	width: 79.5%;
 	height: 347px;
 	border: 1px solid blue;
+	overflow : auto;
 }

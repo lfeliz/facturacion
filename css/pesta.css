@@ -1,0 +1,34 @@
+   table.tabs {
+        border-collapse: separate;
+        border-spacing: 0;
+        background-color: transparent;
+        }
+    table.tabs th.tabck {
+        border: gray solid 1px;
+        border-bottom: 0;
+        background-color: gray;
+        padding-left: 0.2em;
+        padding-right: 0.2em;
+        text-align: center;
+        cursor: pointer;
+        }
+    table.tabs th.tabcks {
+        border: 0;
+        border-bottom: gray solid 1px;
+        }    
+    table.tabs td {
+        border: gray solid 1px;
+        border-top: 0;
+        }
+    table.tabs tr.filadiv {
+        background-color: rgb(235, 235, 225);
+        }
+    table.tabs div.tabdiv { 
+        background-color: rgb(235, 235, 225);
+        border: 0;
+        padding: 0.5em;
+        overflow: auto;
+        display: none;
+        width: 25em;
+        height: 5em;
+        }

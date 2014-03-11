@@ -1,0 +1,56 @@
+ul.simpleTabsNavigation {
+  height: 24px;
+  line-height: 24px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+ul.simpleTabsNavigation li {
+  background-image: none;
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ul.simpleTabsNavigation li a {
+  background-color: #1E252D;
+  border: 2px solid #3E454D;
+  font-size: 18px;
+  color: #BBBBBB;
+  margin: 0 1px 0 0;
+  padding: 6px 10px;
+  text-decoration: none;
+-moz-border-radius: 8px 8px 0 0;
+}
+ul.simpleTabsNavigation li a:hover {
+  background-color: #3E454D;
+  text-decoration: none;
+}
+ul.simpleTabsNavigation li a.current {
+  background-color: #3E454D;
+  color: #FFFFFF;
+}
+div.simpleTabsContent {
+  background-color: transparent;
+  display: none;
+  font-size: 12px;
+  margin-top: 1px;
+  padding: 10px;
+  -webkit-box-shadow: inset 1px -1px 3px #333, 2px 2px 3px #333;
+  -moz-box-shadow: inset 1px -1px 2px #333, 2px 2px 3px #333;
+}
+
+div.simpleTabsContent2 {
+  background-color: transparent;
+  display: block;
+  font-size: 12px;
+  margin-top: 1px;
+  padding: 10px;
+-webkit-box-shadow: inset 1px -1px 3px #333, 2px 2px 3px #333;
+-moz-box-shadow: inset 1px -1px 2px #333, 2px 2px 3px #333;
+}
+
+div.simpleTabsContent.currentTab {
+  display: block;
+}

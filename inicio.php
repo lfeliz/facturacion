@@ -2,6 +2,8 @@
 <html>
 	<head>
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.css" type="text/css"/>
+		<link rel="stylesheet" href="css/bootstrap.min" type="text/css"/>
 		<title>Inicio</title>
 
 	</head>
@@ -18,9 +20,9 @@
  		<nav>
  		<ul>
  			<li><a href="#">Inicio</a></li>
- 			<li><a href="#">Facturaci&oacuten</a></li>
- 			<li><a href="#">Inventario</a></li>
- 			<li><a href="#">Clientes</a></li>
+ 			<li><a href="#">Entradas</a></li>
+ 			<li><a href="#">Vistas</a></li>
+ 			<li><a href="#">Reportes</a></li>
  		</ul>
 
  			
@@ -30,7 +32,37 @@
  	
  		
  	</section>
- 	<section id="central"></section>
+ 	<section id="central">
+ 		
+<?php 
+$link= mysqli_connect("localhost","adminv","inv123","inventario") or die ("Error".mysqli_error($link));
+$query="SELECT * from equipos LIMIT 0 , 30";
+$result= $link->query($query);
+/*while($row = mysqli_fetch_array($result)) {
+  echo $row["posicion"] . "<br>";
+  echo $row["departamento"] . "<br>";
+}*/
+
+?>
+<table class="table table-striped">
+<tr>
+<td>Nombre</td>
+<td>Ip</td>
+<td>Tipo</td>
+</tr>
+<tr>
+
+<?php
+while($row = mysqli_fetch_array($result))
+{
+echo "<td>".$row["Nombre"]."</td>";
+echo "<td>".$row["IP"]."</td>";
+echo "<td>".$row["Tipo"]."</td></tr>";
+
+}
+?>
+</tr></table>
+ 	</section>
  	
  	<footer>
  		
